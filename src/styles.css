@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'Kufam-Black';
+  src: url('../fonts/Kufam-Black.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Kufam-BlackItalic';
+  src: url('../fonts/Kufam-BlackItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Kufam-Bold';
+  src: url('../fonts/Kufam-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Kufam-BoldItalic';
+  src: url('../fonts/Kufam-BoldItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Kufam-ExtraBold';
+  src: url('../fonts/Kufam-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Kufam-ExtraBoldItalic';
+  src: url('../fonts/Kufam-ExtraBoldItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Kufam-Italic';
+  src: url('../fonts/Kufam-Italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Kufam-Medium';
+  src: url('../fonts/Kufam-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Kufam-MediumItalic';
+  src: url('../fonts/Kufam-MediumItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Kufam-Regular';
+  src: url('../fonts/Kufam-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Kufam-SemiBold';
+  src: url('../fonts/Kufam-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Kufam-SemiBoldItalic';
+  src: url('../fonts/Kufam-SemiBoldItalic.ttf') format('truetype');
+}
+body {
+  background: rgba(0, 0, 0, 1);
+}
+/* Estilo para la capa de desenfoque */
+.blur-layer {
+  -webkit-backdrop-filter: blur(2px) brightness(20%);
+  backdrop-filter: blur(2px) brightness(20%);
+  bottom: 0;
+  height: 100px;
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
+  /* Altura de la capa de desenfoque */
+  /* Ajusta la cantidad de desenfoque según tu preferencia */
+  /* Asegura que esté encima del contenido */
+  /* Evita que los eventos de ratón lleguen a esta capa */
+}
+header {
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  justify-content: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Kufam-ExtraBold';
+}
+h1 {
+  font-size: 4rem;
+}
+h6 {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'Kufam-Regular';
+  font-size: 1.4rem;
+  margin: 0 auto;
+  text-align: center;
+  text-wrap: balance;
+  width: 60%;
+}
+p {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'Kufam-Regular';
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+span {
+  color: rgba(251, 165, 51, 1);
+}
+.button button {
+  border-radius: 8px;
+  font-family: 'Kufam-Regular';
+  font-size: 1.1rem;
+  padding: 10px 0 6px;
+  transition: 300ms ease;
+  width: 170px;
+}
+.button .primary-btn {
+  background-color: rgba(255, 255, 255, 1);
+  border: 0;
+  color: rgba(0, 0, 0, 1);
+}
+.button .secondary-btn {
+  background-color: transparent;
+  border: 1px solid rgba(251, 165, 51, 1);
+  color: rgba(255, 255, 255, 1);
+}
+.button .secondary-btn:hover {
+  background-color: rgba(251, 165, 51, 1);
+  color: rgba(0, 0, 0, 1);
+}
+.perfiles img:hover {
+  transform: translateY(-3px);
+  transition: transform 200ms ease-in;
+}
+.line {
+  background: white;
+  height: 1px;
+  width: 100%;
+}
+/* Glassmorphism card effect */
+.card {
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  border-radius: 12px;
+  padding: 18px;
+}
